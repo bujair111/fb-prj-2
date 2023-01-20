@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body style="margin: 0px;">
+  <table style="height: 100%;width: 100%;">
+    <td id="td1" align="center">
+      <br><br><br><br>
+      <table id="tb2">
+        <tr style="height: 200px;">
+          <th id="tb2th" colspan="3">
+            faceboook
+
+        </tr>
+
+        <tr>
+          <td width="35%"></td>
+          <td class="p1">connect with </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="p1">friends and thr</td>
+            
+        </tr>
+        <tr>
+          <td></td>
+          <td class="p1">world around you </td>
+            
+        </tr>
+        <tr style="height: 350px;">
+          <td></td>
+        </tr>
+
+
+
+
+      </table>
+
+
+
+    </td>
+    <td align="center" style="width: 50%;">
+      <table width="78%">
+        
+          <tr>
+            <td id="login" align="center">
+
+              <h3>log in</h3>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"><input class="inp1" type="email" placeholder="user name or mail"> </td>
+          </tr>
+          <tr>
+            <td align="center"><br><input class="inp1" type="password" placeholder="password"></td>
+          </tr>
+          <tr>
+            <td align="center"> <br><a href="{% url 'fb:page' %}"><input id="subm" type="submit" value="log in"></a></td>
+          </tr>
+      
+        <tr>
+          <td align="center">
+            <a href="{% url 'fb:forget' %}"><p style="font-size: small;">forgot password?</p></a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center"><br><br><a href="{% url 'fb:craa' %}"><input id="sub" type="button" value="creat new account"></a></td>
+        </tr>
+        <tr>
+          <td align="center">
+            <p style="font-size: small;"> <b>creat a page</b> for a celebrity,band or business.</p>
+          </td>
+        </tr>
+
+      </table>
+
+
+
+
+    </td>
+  </table>
+
+
+</body>
+
+</html>
